@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+*{ 
+	box-sizing: border-box;
+	margin: 0;
+}
+body, html{
+	width: 100%;
+	height: 100%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	color: #666666;
+}
+header{
+	width: 100%;
+	height: 100%;
+	background-image: url("../imagens/intro-bg.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.titulo{
+	color: #FFFFFF;
+	font-size: 42px;
+	font-weight: bold;
+	padding-top: 9%;
+	padding-left: 2%;
+}
+.subtitulo{
+	color: #FFFFFF;
+	font-size: 17px;
+	font-weight: lighter;
+	padding-left: 2%;
+}
+section{
+	width: 100%;
+	height: 100%;
+}
+nav{
+	width: 100%;
+	background-color: #333333;
+	text-align: center;
+	height: 60px;
+	margin-top: -60px;
+	z-index: 2;
+}
+nav a{
+	color: #FFFFFF;
+	text-decoration: none;
+	display: inline-block;
+	padding: 20px;
+	width: 180px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+}
+nav a:before{
+	content: "";
+	width: 100%;
+	height: 0;
+	background-color: #4CA3D4;
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	top:0;
+	transition: 0.5s;
+}
+nav a:hover:before{
+	height: 100%;
+}
+nav a:hover{
+	color: #333333;
+}
+.titulogeral{
+	text-align: center;
+	padding-top: 6%;
+	width: 20%;
+	border-bottom: 1px solid #666;
+	margin: 5% auto;
+}
+.fixamenu{
+	position: fixed;
+	top: 0;
+	margin-top: 0;
+}
+.imgsobre{
+	border-radius: 50%;
+	margin: auto;
+	display: block;
+}
+.paragrafo{
+	width: 70%;
+	margin: 2% auto;
+	text-align: justify;
+	line-height: 24px;
+}
+#habilidades{
+	background-image: url("../imagens/surf3.jpg");
+	color: #FFFFFF;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.textohtml5, .textocss3, .textojquery, .textofront, .textophoto, .textoillustrator{
+	width: 140px;
+	float: left;
+	margin-left: 10%;
+	padding: 1%;
+	text-align: right;
+	margin-bottom: 5px;
+}
+.html5, .css3, .front, .jquery, .photo, .illustrator{
+	width: 0;
+	overflow: hidden;
+	padding: 1% 0;
+	background-color: #4CA3D4;
+	margin-bottom: 5px;
+	float: left;
+	text-align: right;
+	font-weight: bold;
+	transition: 0.5s;
+	transition-timing-function: ease-out;
+}
+.animahtml5{
+	width: 35%;
+	padding: 1%;
+	transition-delay: 0.1s;
+}
+.animacss3{
+	width: 33%;
+	padding: 1%;
+	transition-delay: 0.2s;
+}
+.animajquery{
+	width: 36%;
+	padding: 1%;
+	transition-delay: 0.3s;
+}
+.animafront{
+	width: 34%;
+	padding: 1%;
+	transition-delay: 0.4s;
+}
+.animaphoto{
+	width: 30%;
+	padding: 1%;
+	transition-delay: 0.5s;
+}
+.animaillustrator{
+	width: 32%;
+	padding: 1%;
+	transition-delay: 0.6s;
+}
+.galeria{
+	width: 90%;
+	margin: auto;
+}
+#contato article{
+	width: 50%;
+	float: left;
+	height: 450px;
+	padding: 2%;
+}
+.campo{
+	width: 100%;
+	background-color: #EEEEEE;
+	color: #333333;
+	border: none;
+	padding: 15px;
+	margin: 2px 0;
+	font-size: 16px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	resize: none;
+}
+.botao{
+	background-color: #333333;
+	color: #EEEEEE;
+	padding: 6px 30px;
+	border: transparent 5px solid;
+	cursor: pointer;
+	margin: 2px;
+	transition: 0.5s;
+}
+.botao:hover{
+	background-color: transparent;
+	color: #333333;
+	border: #36ADF0 5px solid;
+}
+footer{
+	background-color: #333333;
+	color: #DDDDDD;
+	width: 100%;
+	padding: 1%;
+	text-align: center;
+	font-size: 12px;
+	padding-bottom: 0;
+}
+footer a{
+	color: #999999;
+	font-size: 18px;
+	padding: 5px;
+}
+footer a:hover{
+	color: #FFFFFF;
+}
+footer p{
+	border-top: 1px solid #999999;
+	padding: 15px;
+	margin-top: 15px;
+}
+
+
+
+
+
+
